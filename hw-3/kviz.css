@@ -1,15 +1,70 @@
-*{
-    text-align: center;
-    background-image: url("quiz1.jpg");
-    color:rgb(139, 131, 131);
+*{    
     font-weight: bold;
-    font-size: 18px;
-    
+}
+#pocetna{
+    background-image: url("quiz1.jpg");
 }
 #pocetak{
     color:red;
 }
 .panel-heading{
+    text-align:center;
     font-style: italic;
     font-size: 20px;
+}
+.panel-body{
+    text-align: center;
+    font-size:18px;
+    color:rgb(139, 131, 131);
+}
+body 
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+.button 
+{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    float:right;
+    background-color: rgb(219,212,212);
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+}
+.button a 
+{
+    text-decoration: none;
+    color:rgb(58, 11, 11);
+    font-weight: bold;
+    font-size:20px;
+}
+#container 
+{
+    width:50%;
+    margin: 150px auto;
+    padding: 50px 30px;
+    background-color: rgb(219, 212, 212);
+    border-radius:3px;
+    color:rgb(58, 11, 11);
+    box-shadow: 0 0 10px 0 #999;
+    font-weight: bold;
+}
+ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+
+}
+ul li
+{
+    background:grey;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block; 
+}
+input[type="radio"]{
+    cursor: pointer;
 }
