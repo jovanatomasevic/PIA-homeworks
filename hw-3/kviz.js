@@ -54,8 +54,6 @@
           chooseOption();
           brojacPitanja++;
           narednoPitanje();
-          myTimer();
-        
     });  
    
    $('#kraj').click(function krajIgre()
@@ -66,11 +64,15 @@
         $('#naredno').hide();
         $('#kraj').hide();
         myStopFunction();
-        $(document).ready(function() {
-       $('#container').append('<button class="btn-styled" type="button"><a href="kviz.html"><span>Покрени поново</span></a></button>');
-});
+        povratak();
+       
       });
-  
+      function povratak()
+      {
+      $(document).ready(function () {
+        $('#container').append('<button class="btn-styled" type="button"><a href="kviz.html"><span>Покрени поново</span></a></button>');
+ });
+}
    
   function createElement(index) 
     {
@@ -111,7 +113,6 @@
       prostorKviza.fadeOut(function() 
             {
               $('#pitanje').remove();
-              setInterval(myVar);
               if(brojacPitanja < svaPitanja.length)
                 {
                     var narednoPitanje = createElement(brojacPitanja);
@@ -130,7 +131,8 @@
                     var scoreRslt = displayResult();
                     prostorKviza.append(scoreRslt).fadeIn();
                     $('#naredno').hide();
-                  
+                    $("#kraj").hide();
+                    povratak(); 
                 }
         });
     }
