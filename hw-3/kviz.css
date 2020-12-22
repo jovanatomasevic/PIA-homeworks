@@ -68,3 +68,22 @@ ul li
 input[type="radio"]{
     cursor: pointer;
 }
+#prikazTajmera{
+    padding: 2%;
+    float:right;
+    width: 60px;
+    height: 25pd;
+    border:2px solid grey;
+    color:red;
+    border-radius: 100%;
+    font-size:25px;
+}
+.btn-styled {
+    font-size: 14px;
+    padding: 0.5%;
+    line-height: 2;
+  
+  }
+span{
+    color:red;
+}
