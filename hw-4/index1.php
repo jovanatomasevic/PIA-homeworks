@@ -1,10 +1,12 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Registracija</title>
 	</head>
 	<style> 
 		h1{
 			text-align: center;
+			font-style: italic;
 		}
 		#registracija{
 			margin: auto;
@@ -19,7 +21,7 @@
 			background-image: url("pozadina.jpg");
 		}
 		input{
-			font-size: 20px;
+			font-size: 25px;
 			margin: auto;
 			text-align: center;
 		}
@@ -30,25 +32,23 @@
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
-		}
+			
+			}
 	</style>
 	<body>
+	
+		
 	<h1>Registracija</h1>
 	<div id="registracija">
-		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
-			Ime: &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="text" name="ime" size="30"> <br>
-			Prezime:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="text" name="prezime" size="30"> <br>
-			E-mail adresa:&nbsp;
-			<input type="text" name="mejl" size="30"> <br>
-			Korisničko ime:
-			<input type="text" name="korisnickoIme" size="30"> <br>
-			Lozinka:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="password" name="lozinka" size="30"><br><br>
-			<input type="submit" name="potvrda" value="Potvrdi"><br><br>
-			<a href="prijava.php">Prijavite se u postojeći nalog</a>
+		<form action="upisUbazu.php" method="POST" name="registracija">
+			<input type="text" name="ime" placeholder="Ime"></br>
+			<input type="text" name="prezime" placeholder="Prezime"></br>
+			<input type="text" name="korisnickoIme" placeholder="Korisničko ime"></br>
+			<input type="email" name="mejl" placeholder="E-mail"></br>
+			<input type="password" name="lozinka" placeholder="Lozinka"></br>
+			<input type="submit" name="submit" value="Registrujte se"></br>
 		</form>
+		<a href="prijava.php">Prijavite se u postojeći nalog</a>
 	</div>
 	</body>
 	<?php

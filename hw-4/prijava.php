@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Prijava</title>
 	</head>
 	<style>
@@ -16,27 +17,24 @@
 		background-image: url("pozadina.jpg");
 	}
 	input{
-		font-size: 20px;
-		margin: auto;
+		text-align:center;
+		width: 40%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		font-size: 25px;
 		position: center;
 	}
 	</style>
 	<body>
 	<div id="prijava">
 	<h1>Prijava</h1>
-		<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
-			Korisniƒçko ime ili e-mail adresa:
-			<input type="text" name="ime" size="30"><br>
-			Lozinka:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="password" name="lozinka" size="30"><br><br>
-			<input type="submit" name="prijava" value="Prijavi se"><br><br>
+		<form  method="POST" name="prijava">
+			<input type="text" name="korisnickoIme" placeholder="E-mail adresa ili korisniËko ime"></br>
+			<input type="password" name="lozinka" placeholder="Lozinka"></br>
+			<input type="submit" name="submit" value="Prijavi se"></br>
 		</form>
 	</div>
+	
 	</body>
-	<?php
-	if (isset ($_GET["potvrda"]))
-	{	
-		//prelazak na stranu sa filmovima
-	}
-	?>
 </html>
