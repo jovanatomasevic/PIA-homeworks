@@ -51,10 +51,4 @@
 		<a href="prijava.php">Prijavite se u postojeći nalog</a>
 	</div>
 	</body>
-	<?php
-	if (isset ($_GET["potvrda"]))
-	{	
-		//prelazak na stranu sa filmovima
-	}
-	?>
 </html>
